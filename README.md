@@ -26,6 +26,10 @@ I used `pathlib` to scan the directory and simple extension checks (`.suffix.low
 
 • What was the hardest bug you faced, and how did you fix it?
 Avoiding accidental overwrites when two files end up with the same timestamped name. I fixed it by adding `ensure_unique_path()`, which appends `_1`, `_2`, etc. if the destination filename already exists.
+4. Output Screenshot: 
+Before: <img width="1915" height="1010" alt="Screenshot 2026-01-28 123332" src="https://github.com/user-attachments/assets/468a94c2-795d-4741-b47b-212317090683" />
 
-4. Future Improvements: If you had 2 more days, what would you add?
+After : <img width="1175" height="653" alt="Screenshot 2026-01-28 123446" src="https://github.com/user-attachments/assets/510c042f-f9d8-4064-8bfa-33d14ac48d59" />
+
+5. Future Improvements: If you had 2 more days, what would you add?
 I’d add recursive organization (`--recursive`), a `--dry-run` mode to preview changes, and a configurable rules file (JSON/YAML) so new categories (PDFs, zips, videos) can be added without changing code.
